@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
-import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import QuizHeader from "../../components/quizheader";
 import Slider from "@mui/material/Slider";
 
+import QuizHeader from "../../components/quizheader";
+
 export default function Quizstep8() {
-  var navigate = useNavigate();
+  const navigate = useNavigate();
 
   const clickHandler = () => {
     navigate("/screen-1246ff11");
@@ -65,7 +66,7 @@ export default function Quizstep8() {
               </Typography>
             </Card>
           </Box>
-          <Grid sx={{ mt: 5, mb: 5, pt: 5 }}>
+          <Grid className="daysSlider" sx={{ mt: 5, mb: 5, pt: 5 }}>
             <Slider
               className="slider7"
               aria-label="Always visible"

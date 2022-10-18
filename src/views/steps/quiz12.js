@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Button,
@@ -10,13 +11,14 @@ import {
   FormControlLabel,
   FormGroup,
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import QuizHeader from "../../components/quizheader";
 import { styled } from "@mui/material/styles";
 
+import QuizHeader from "../../components/quizheader";
+
 export default function Quizstep12() {
-  var navigate = useNavigate();
+  const navigate = useNavigate();
+
   const [checked, setChecked] = useState(false);
   const [error, setError] = useState(false);
 
@@ -24,12 +26,13 @@ export default function Quizstep12() {
     if (checked) {
       navigate("/screen-57f5661b");
     } else {
-			setError(true);
+      setError(true);
       setTimeout(() => {
         setError(false);
       }, 500);
     }
   };
+
   const BpIcon = styled("span")(({ theme }) => ({
     borderRadius: 6,
     width: 20,

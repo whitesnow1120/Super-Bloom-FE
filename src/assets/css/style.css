@@ -274,6 +274,15 @@ h5.quesheading {
   font-weight: 500;
 }
 
+.slider7 .MuiSlider-track {
+  height: 3px !important;
+}
+
+.slider7 .MuiSlider-thumb {
+  background-color: #f2f2f2;
+  border: 3px solid #a25cd9;
+}
+
 .customcheckox .MuiFormControlLabel-label {
   font-family: Poppins;
   font-size: 16px;
@@ -675,6 +684,11 @@ span.MuiRating-visuallyHidden {
 
   .accodiandesc {
     font-size: 16px !important;
+  }
+
+  .daysSlider {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 

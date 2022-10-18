@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
-import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import QuizHeader from "../../components/quizheader";
 import Checkbox from "@mui/joy/Checkbox";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
+
+import QuizHeader from "../../components/quizheader";
 
 const listData = {
   "1": "Feel Happier",
@@ -21,7 +22,7 @@ const listData = {
 };
 
 export default function Quizstep1() {
-  var navigate = useNavigate();
+  const navigate = useNavigate();
 
   const clickHandler = () => {
     navigate("/screen-fb8379a7");
@@ -57,7 +58,7 @@ export default function Quizstep1() {
     const startedTimeStamp = localStorage.getItem("startedTimeStamp");
     if (
       startedTimeStamp !== null &&
-      parseInt(startedTimeStamp) < currentTimeStamp - 3600
+      parseInt(startedTimeStamp) < currentTimeStamp - 2000
     ) {
       localStorage.clear();
     }

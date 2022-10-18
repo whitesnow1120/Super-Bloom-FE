@@ -17,33 +17,30 @@ import Quizstep12 from "./views/steps/quiz12";
 import Quizstep13 from "./views/steps/quiz13";
 import Quizstep14 from "./views/steps/quiz14";
 import Quizstep15 from "./views/steps/quiz15";
-import { AuthProvide } from "./Auth";
 
 function App() {
   return (
-    <AuthProvide>
-      <BrowserRouter>
-        <Routes>
-          <Route path={`/`} element={<Home />} />
-          <Route path={`/start`} element={<Home />} />
-          <Route path={`/screen-0348468e`} element={<Quizstep1 />} />
-          <Route path={`/screen-fb8379a7`} element={<Quizstep2 />} />
-          <Route path={`/screen-d375fd85`} element={<Quizstep3 />} />
-          <Route path={`/screen-84e7c248`} element={<Quizstep4 />} />
-          <Route path={`/screen-bd393b98`} element={<Quizstep5 />} />
-          <Route path={`/screen-cea9542f`} element={<Quizstep6 />} />
-          <Route path={`/screen-3a39b32d`} element={<Quizstep7 />} />
-          <Route path={`/screen-3c87535a`} element={<Quizstep8 />} />
-          <Route path={`/screen-1246ff11`} element={<Quizstep9 />} />
-          <Route path={`/screen-8556a584`} element={<Quizstep10 />} />
-          <Route path={`/screen-f5e829bb`} element={<Quizstep11 />} />
-          <Route path={`/screen-f24b6764`} element={<Quizstep12 />} />
-          <Route path={`/screen-57f5661b`} element={<Quizstep13 />} />
-          <Route path={`/screen-f38e984f`} element={<Quizstep14 />} />
-          <Route path={`/screen-296bb8d5`} element={<Quizstep15 />} />
-        </Routes>
-      </BrowserRouter>
-    </AuthProvide>
+    <BrowserRouter>
+      <Routes>
+        <Route path={`/`} element={<Home />} />
+        <Route path={`/start`} element={<Home />} />
+        <Route path={`/screen-0348468e`} element={<Quizstep1 />} />
+        <Route path={`/screen-fb8379a7`} element={<Quizstep2 />} />
+        <Route path={`/screen-d375fd85`} element={<Quizstep3 />} />
+        <Route path={`/screen-84e7c248`} element={<Quizstep4 />} />
+        <Route path={`/screen-bd393b98`} element={<Quizstep5 />} />
+        <Route path={`/screen-cea9542f`} element={<Quizstep6 />} />
+        <Route path={`/screen-3a39b32d`} element={<Quizstep7 />} />
+        <Route path={`/screen-3c87535a`} element={<Quizstep8 />} />
+        <Route path={`/screen-1246ff11`} element={<Quizstep9 />} />
+        <Route path={`/screen-8556a584`} element={<Quizstep10 />} />
+        <Route path={`/screen-f5e829bb`} element={<Quizstep11 />} />
+        <Route path={`/screen-f24b6764`} element={<Quizstep12 />} />
+        <Route path={`/screen-57f5661b`} element={<Quizstep13 />} />
+        <Route path={`/screen-f38e984f`} element={<Quizstep14 />} />
+        <Route path={`/screen-296bb8d5`} element={<Quizstep15 />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -42,8 +42,6 @@ export default function QuizHeader(props) {
           ) : (
             <Box className="blanckiamgess"></Box>
           )}
-
-          {/* <Typography  variant="h2" onClick={skipHandler} className="skiptext">Skip</Typography> */}
         </Box>
       </Container>
     </Grid>

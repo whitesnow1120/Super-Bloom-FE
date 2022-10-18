@@ -1,11 +1,12 @@
-import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import QuizHeader from "../../components/quizheader";
 import Radio from "@mui/joy/Radio";
 import RadioGroup from "@mui/joy/RadioGroup";
 import Sheet from "@mui/joy/Sheet";
+
+import QuizHeader from "../../components/quizheader";
 
 const listData = {
   "1": "Nope",
@@ -15,7 +16,7 @@ const listData = {
 };
 
 export default function Quizstep6() {
-  var navigate = useNavigate();
+  const navigate = useNavigate();
 
   const clickHandler = () => {
     navigate("/screen-3a39b32d");

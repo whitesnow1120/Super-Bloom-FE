@@ -1,14 +1,16 @@
-import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import QuizHeader from "../../components/quizheader";
 
 export default function Quizstep7() {
-  var navigate = useNavigate();
+  const navigate = useNavigate();
+
   const clickHandler = () => {
     navigate("/screen-3c87535a");
   };
+
   return (
     <Box>
       <QuizHeader skip={"/screen-3c87535a"} backBtn={true} />

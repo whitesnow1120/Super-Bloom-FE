@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Button,
@@ -8,12 +9,12 @@ import {
   Slider,
   Typography,
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
 import QuizHeader from "../../components/quizheader";
 
 export default function Quizstep9() {
-  var navigate = useNavigate();
+  const navigate = useNavigate();
 
   const clickHandler = () => {
     navigate("/screen-8556a584");
@@ -69,7 +70,7 @@ export default function Quizstep9() {
               </Typography>
             </Card>
           </Box>
-          <Grid sx={{ mt: 5, mb: 5, pt: 5 }}>
+          <Grid className="daysSlider" sx={{ mt: 5, mb: 5, pt: 5 }}>
             <Slider
               className="slider7"
               aria-label="Always visible"

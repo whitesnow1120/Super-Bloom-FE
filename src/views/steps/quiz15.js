@@ -13,7 +13,7 @@ import closeaco from "../../assets/img/closeicon.png";
 import { stripeApi } from "../../services";
 
 export default function Quizstep15() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const clickHandler = async () => {
     setLoading(true);
@@ -62,7 +62,7 @@ export default function Quizstep15() {
 
   return (
     <Box>
-      <QuizHeader backBtn={true} />
+      <QuizHeader backBtn={false} />
       <Container>
         <Grid className="innerContainer">
           <Box className="maincard" sx={{ mb: 2 }}>
@@ -174,16 +174,16 @@ export default function Quizstep15() {
             </Accordion>
           </Grid>
 
-          {loading ? (
+          {!loading ? (
+            <Button onClick={clickHandler} className="btnbutton">
+              Start Trial <ArrowForwardIosIcon></ArrowForwardIosIcon>
+            </Button>
+          ) : (
             <Grid className="dotGroup">
               <Grid className="dot"></Grid>
               <Grid className="dot"></Grid>
               <Grid className="dot"></Grid>
             </Grid>
-          ) : (
-            <Button onClick={clickHandler} className="btnbutton">
-              Start Trial <ArrowForwardIosIcon></ArrowForwardIosIcon>
-            </Button>
           )}
         </Grid>
       </Container>

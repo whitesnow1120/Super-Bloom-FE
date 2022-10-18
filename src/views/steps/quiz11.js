@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
-import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import QuizHeader from "../../components/quizheader";
 import { styled } from "@mui/material/styles";
 import Rating from "@mui/material/Rating";
 import { Stack } from "@mui/system";
 
+import QuizHeader from "../../components/quizheader";
+
 export default function Quizstep11() {
-  var navigate = useNavigate();
+  const navigate = useNavigate();
+
   const StyledRating = styled(Rating)({
     "& .MuiRating-iconFilled": {
       color: "#ff6d75",

@@ -14,10 +14,12 @@ import active from "../../assets/img/activity.png";
 import edit from "../../assets/img/edit-square.png";
 
 export default function Quizstep14() {
-  var navigate = useNavigate();
+  const navigate = useNavigate();
+
   const clickHandler = () => {
     navigate("/screen-296bb8d5");
   };
+
   return (
     <Box>
       <QuizHeader skip={"/screen-296bb8d5"} backBtn={true} />

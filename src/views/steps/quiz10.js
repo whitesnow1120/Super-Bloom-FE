@@ -1,6 +1,6 @@
-import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import QuizHeader from "../../components/quizheader";
 import Radio from "@mui/joy/Radio";
@@ -8,15 +8,15 @@ import RadioGroup from "@mui/joy/RadioGroup";
 import Sheet from "@mui/joy/Sheet";
 
 const listData = {
-  "1": "I wake up feeling rested",
-  "2": "I don't need an alarm to wake up",
-  "3": "I wake up feeling tired",
-  "4": "I wake up feeling groggy",
-  "5": "I have a hard time getting out of bed.",
+  "1": "I Wake Up Feeling Rested",
+  "2": "I Don't Need An Alarm To Wake Up",
+  "3": "I Wake Up Feeling Tired",
+  "4": "I Wake Up Feeling Groggy",
+  "5": "I Have A Hard Time Getting Out Of Bed.",
 };
 
 export default function Quizstep10() {
-  var navigate = useNavigate();
+  const navigate = useNavigate();
 
   const clickHandler = () => {
     navigate("/screen-f5e829bb");
