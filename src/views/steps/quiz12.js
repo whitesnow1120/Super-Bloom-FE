@@ -111,7 +111,7 @@ export default function Quizstep12() {
 
   return (
     <Box>
-      <QuizHeader skip={"/screen-57f5661b"} backBtn={false} />
+      <QuizHeader skip={"/screen-57f5661b"} skipBtn={false} />
       <Container>
         <Grid className="innerContainer">
           <Box className="maincard" sx={{ mb: 2 }}>

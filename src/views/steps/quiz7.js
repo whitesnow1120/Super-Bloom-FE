@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
 import QuizHeader from "../../components/quizheader";
 
 export default function Quizstep7() {
@@ -13,7 +14,7 @@ export default function Quizstep7() {
 
   return (
     <Box>
-      <QuizHeader skip={"/screen-3c87535a"} backBtn={true} />
+      <QuizHeader skip={"/screen-3c87535a"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
           <Box className="maincard" sx={{ mb: 2 }}>

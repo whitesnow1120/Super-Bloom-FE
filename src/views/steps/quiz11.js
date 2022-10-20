@@ -36,7 +36,7 @@ export default function Quizstep11() {
 
   return (
     <Box>
-      <QuizHeader skip={"/screen-f24b6764"} backBtn={true} />
+      <QuizHeader skip={"/screen-f24b6764"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
           <Box className="maincard" sx={{ mb: 2 }}>
@@ -64,7 +64,7 @@ export default function Quizstep11() {
               name="customized-color"
               defaultValue={
                 localStorage.getItem("journaling") !== null
-                  ? localStorage.getItem("journaling")
+                  ? parseInt(localStorage.getItem("journaling"))
                   : 3
               }
               onChange={(e) => toggleHandler(e)}

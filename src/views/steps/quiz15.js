@@ -17,6 +17,7 @@ export default function Quizstep15() {
 
   const clickHandler = async () => {
     setLoading(true);
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const params = {
       mainGoals: localStorage.getItem("mainGoals"),
       otherGoals: localStorage.getItem("otherGoals"),
@@ -24,6 +25,7 @@ export default function Quizstep15() {
       goodDays: localStorage.getItem("goodDays"),
       sleepingPatterns: localStorage.getItem("sleepingPatterns"),
       journaling: localStorage.getItem("journaling"),
+      tz,
     };
     const response = await stripeApi(params);
     if (response && response.status < 300) {
@@ -62,7 +64,7 @@ export default function Quizstep15() {
 
   return (
     <Box>
-      <QuizHeader backBtn={false} />
+      <QuizHeader skipBtn={false} />
       <Container>
         <Grid className="innerContainer">
           <Box className="maincard" sx={{ mb: 2 }}>

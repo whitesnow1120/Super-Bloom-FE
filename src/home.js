@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Container, Stack, Typography } from "@mui/material";
+
 import QuizHeader from "./components/quizheader";
 import WelcomeQuiz from "./components/welcomeQuiz";
 
@@ -8,7 +9,7 @@ const Home = () => {
     <>
       <Box className="welcomheader">
         <Stack>
-          <QuizHeader backBtn={false} />
+          <QuizHeader skipBtn={false} />
           <WelcomeQuiz />
         </Stack>
       </Box>

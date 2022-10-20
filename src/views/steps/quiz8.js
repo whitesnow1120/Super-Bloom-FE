@@ -40,7 +40,7 @@ export default function Quizstep8() {
 
   return (
     <Box>
-      <QuizHeader skip={"/screen-1246ff11"} backBtn={true} />
+      <QuizHeader skip={"/screen-1246ff11"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
           <Box className="maincard" sx={{ mb: 2 }}>
@@ -72,7 +72,7 @@ export default function Quizstep8() {
               aria-label="Always visible"
               defaultValue={
                 localStorage.getItem("badDays") !== null
-                  ? localStorage.getItem("badDays")
+                  ? parseInt(localStorage.getItem("badDays"))
                   : 3
               }
               onChange={(e) => toggleHandler(e)}

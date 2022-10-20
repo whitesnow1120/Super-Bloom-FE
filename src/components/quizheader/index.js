@@ -1,7 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Box, Container, Grid, Link, Typography } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { useNavigate } from "react-router-dom";
 
 export default function QuizHeader(props) {
   const { skip } = props;
@@ -35,7 +35,7 @@ export default function QuizHeader(props) {
           <Link variant="h4" className="logotitle">
             Quiz
           </Link>
-          {props.backBtn ? (
+          {props.skipBtn ? (
             <Typography variant="h2" onClick={skipHandler} className="skiptext">
               Skip
             </Typography>
