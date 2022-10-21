@@ -7,14 +7,7 @@ import RadioGroup from "@mui/joy/RadioGroup";
 import Sheet from "@mui/joy/Sheet";
 
 import QuizHeader from "../../components/quizheader";
-
-const listData = {
-  "1": "I Wake Up Feeling Rested",
-  "2": "I Don't Need An Alarm To Wake Up",
-  "3": "I Wake Up Feeling Tired",
-  "4": "I Wake Up Feeling Groggy",
-  "5": "I Have A Hard Time Getting Out Of Bed.",
-};
+import { SLEEPING_PATTENRS_LIST } from "../../constants";
 
 export default function Quizstep10() {
   const navigate = useNavigate();
@@ -64,14 +57,14 @@ export default function Quizstep10() {
               size="lg"
               sx={{ gap: 1.4 }}
             >
-              {Object.keys(listData).map((index) => (
+              {Object.keys(SLEEPING_PATTENRS_LIST).map((index) => (
                 <Sheet
                   className="inputborder"
-                  key={listData[index]}
+                  key={SLEEPING_PATTENRS_LIST[index]}
                   sx={{ px: 3, py: 1.7, borderRadius: "50px" }}
                 >
                   <Radio
-                    label={listData[index]}
+                    label={SLEEPING_PATTENRS_LIST[index]}
                     overlay
                     disableIcon
                     value={index}

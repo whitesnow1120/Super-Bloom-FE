@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Box, Container, Stack, Typography } from "@mui/material";
 
-import QuizHeader from "./components/quizheader";
-import WelcomeQuiz from "./components/welcomeQuiz";
+import QuizHeader from "../components/quizheader";
+import WelcomeQuiz from "../components/welcomeQuiz";
 
 const Home = () => {
   useEffect(() => {

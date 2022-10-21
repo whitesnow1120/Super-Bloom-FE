@@ -7,19 +7,7 @@ import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 
 import QuizHeader from "../../components/quizheader";
-
-const listData = {
-  "1": "Feel Happier",
-  "2": "Practice Gratitude",
-  "3": "Become More Kind To Myself",
-  "4": "Make More Time For Myself",
-  "5": "Reduce My Stress",
-  "6": "Connect Better With Loved Ones",
-  "7": "Go Out More",
-  "8": "Let Go Of Negative Thoughts",
-  "9": "Get More Rest",
-  "10": "Get My Body Moving More Often",
-};
+import { MAIN_GOALS_LIST } from "../../constants";
 
 export default function Quizstep1() {
   const navigate = useNavigate();
@@ -77,8 +65,11 @@ export default function Quizstep1() {
           <Grid sx={{ mt: 4, mb: 4 }}>
             <Box role="group" aria-labelledby="topping">
               <List size="lg" sx={{ gap: 1.4 }}>
-                {Object.keys(listData).map((index) => (
-                  <ListItem key={listData[index]} className="inputborder">
+                {Object.keys(MAIN_GOALS_LIST).map((index) => (
+                  <ListItem
+                    key={MAIN_GOALS_LIST[index]}
+                    className="inputborder"
+                  >
                     <Checkbox
                       componentsProps={{
                         label: ({ checked }) => ({
@@ -112,7 +103,7 @@ export default function Quizstep1() {
                       overlay
                       disableIcon
                       variant="soft"
-                      label={listData[index]}
+                      label={MAIN_GOALS_LIST[index]}
                     />
                   </ListItem>
                 ))}

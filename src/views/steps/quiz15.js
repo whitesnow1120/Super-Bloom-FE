@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Accordion from "@mui/material/Accordion";
@@ -10,31 +11,11 @@ import QuizHeader from "../../components/quizheader";
 import plusaco from "../../assets/img/plusicon.png";
 import closeaco from "../../assets/img/closeicon.png";
 
-import { stripeApi } from "../../services";
-
 export default function Quizstep15() {
-  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
-  const clickHandler = async () => {
-    setLoading(true);
-    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    const params = {
-      mainGoals: localStorage.getItem("mainGoals"),
-      otherGoals: localStorage.getItem("otherGoals"),
-      badDays: localStorage.getItem("badDays"),
-      goodDays: localStorage.getItem("goodDays"),
-      sleepingPatterns: localStorage.getItem("sleepingPatterns"),
-      journaling: localStorage.getItem("journaling"),
-      tz,
-    };
-    const response = await stripeApi(params);
-    if (response && response.status < 300) {
-      const url = response.data.url;
-      window.open(url, "_blank");
-    } else {
-      console.log("--- error ---", response.data.message);
-    }
-    setLoading(false);
+  const clickHandler = () => {
+    navigate("/screen-w4h27br1");
   };
 
   const CustomExpandIcon = () => {
@@ -64,7 +45,7 @@ export default function Quizstep15() {
 
   return (
     <Box>
-      <QuizHeader skipBtn={false} />
+      <QuizHeader skip={"/screen-w4h27br1"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
           <Box className="maincard" sx={{ mb: 2 }}>
@@ -176,17 +157,9 @@ export default function Quizstep15() {
             </Accordion>
           </Grid>
 
-          {!loading ? (
-            <Button onClick={clickHandler} className="btnbutton">
-              Start Trial <ArrowForwardIosIcon></ArrowForwardIosIcon>
-            </Button>
-          ) : (
-            <Grid className="dotGroup">
-              <Grid className="dot"></Grid>
-              <Grid className="dot"></Grid>
-              <Grid className="dot"></Grid>
-            </Grid>
-          )}
+          <Button onClick={clickHandler} className="btnbutton">
+            Continue <ArrowForwardIosIcon></ArrowForwardIosIcon>
+          </Button>
         </Grid>
       </Container>
     </Box>

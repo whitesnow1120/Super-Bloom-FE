@@ -7,13 +7,7 @@ import RadioGroup from "@mui/joy/RadioGroup";
 import Sheet from "@mui/joy/Sheet";
 
 import QuizHeader from "../../components/quizheader";
-
-const listData = {
-  "1": "Nope",
-  "2": "Practice Mindfulness",
-  "3": "Fuel My Body With Good Foods",
-  "4": "Communicate My Feelings More",
-};
+import { OTHER_GOALS_LIST } from "../../constants";
 
 export default function Quizstep6() {
   const navigate = useNavigate();
@@ -55,14 +49,14 @@ export default function Quizstep6() {
               size="lg"
               sx={{ gap: 1.4 }}
             >
-              {Object.keys(listData).map((index) => (
+              {Object.keys(OTHER_GOALS_LIST).map((index) => (
                 <Sheet
                   className="inputborder"
-                  key={listData[index]}
+                  key={OTHER_GOALS_LIST[index]}
                   sx={{ px: 3, py: 1.7, borderRadius: "50px" }}
                 >
                   <Radio
-                    label={listData[index]}
+                    label={OTHER_GOALS_LIST[index]}
                     overlay
                     disableIcon
                     value={index}

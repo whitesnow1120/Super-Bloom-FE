@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from "./home";
+import Home from "./views/home";
 import Quizstep1 from "./views/steps/quiz1";
 import Quizstep2 from "./views/steps/quiz2";
 import Quizstep3 from "./views/steps/quiz3";
@@ -17,6 +17,7 @@ import Quizstep12 from "./views/steps/quiz12";
 import Quizstep13 from "./views/steps/quiz13";
 import Quizstep14 from "./views/steps/quiz14";
 import Quizstep15 from "./views/steps/quiz15";
+import Quizstep16 from "./views/steps/quiz16";
 import Quizstep17 from "./views/steps/quiz17";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path={`/screen-57f5661b`} element={<Quizstep13 />} />
         <Route path={`/screen-f38e984f`} element={<Quizstep14 />} />
         <Route path={`/screen-296bb8d5`} element={<Quizstep15 />} />
+        <Route path={`/screen-w4h27br1`} element={<Quizstep16 />} />
         <Route path={`/screen-3f1b49da`} element={<Quizstep17 />} />
       </Routes>
     </BrowserRouter>
