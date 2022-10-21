@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Container, Stack, Typography } from "@mui/material";
 
 import QuizHeader from "./components/quizheader";
 import WelcomeQuiz from "./components/welcomeQuiz";
 
 const Home = () => {
+  useEffect(() => {
+    const currentTimeStamp = Math.round(new Date().getTime() / 1000);
+    const startedTimeStamp = localStorage.getItem("startedTimeStamp");
+    if (
+      startedTimeStamp !== null &&
+      parseInt(startedTimeStamp) < currentTimeStamp - 2000
+    ) {
+      localStorage.clear();
+    }
+    localStorage.setItem("startedTimeStamp", currentTimeStamp);
+  }, []);
+
   return (
     <>
       <Box className="welcomheader">

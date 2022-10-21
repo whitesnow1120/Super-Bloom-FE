@@ -17,6 +17,7 @@ import Quizstep12 from "./views/steps/quiz12";
 import Quizstep13 from "./views/steps/quiz13";
 import Quizstep14 from "./views/steps/quiz14";
 import Quizstep15 from "./views/steps/quiz15";
+import Quizstep17 from "./views/steps/quiz17";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path={`/screen-57f5661b`} element={<Quizstep13 />} />
         <Route path={`/screen-f38e984f`} element={<Quizstep14 />} />
         <Route path={`/screen-296bb8d5`} element={<Quizstep15 />} />
+        <Route path={`/screen-3f1b49da`} element={<Quizstep17 />} />
       </Routes>
     </BrowserRouter>
   );

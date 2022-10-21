@@ -354,6 +354,23 @@ h5.quesheading {
   margin: 60px auto 0px;
 }
 
+.complete-img {
+  width: 200px;
+  display: block;
+  text-align: center;
+  height: 200px;
+  margin: 60px auto 0px;
+}
+
+.complete-message {
+  color: #a25cd9;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 32px !important;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .privacypolicy p {
   font-family: "Poppins";
   font-style: normal;
@@ -370,12 +387,12 @@ h5.quesheading {
 
 .privacypolicy a {
   text-decoration: none;
-  color: #bdbdbd;
+  color: #a25cd9;
   cursor: pointer;
 }
 
 .privacypolicy a:hover {
-  color: #a25cd9;
+  text-decoration: underline;
 }
 
 .privacypolicy {

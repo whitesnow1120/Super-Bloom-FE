@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -52,18 +52,6 @@ export default function Quizstep1() {
     dataOfStep1 = dataOfStep1.join(",");
     localStorage.setItem("mainGoals", dataOfStep1);
   };
-
-  useEffect(() => {
-    const currentTimeStamp = Math.round(new Date().getTime() / 1000);
-    const startedTimeStamp = localStorage.getItem("startedTimeStamp");
-    if (
-      startedTimeStamp !== null &&
-      parseInt(startedTimeStamp) < currentTimeStamp - 2000
-    ) {
-      localStorage.clear();
-    }
-    localStorage.setItem("startedTimeStamp", currentTimeStamp);
-  }, []);
 
   return (
     <Box>
