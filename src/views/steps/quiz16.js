@@ -42,11 +42,13 @@ export default function Quizstep16() {
     const response = await stripeApi(params);
     if (response && response.status < 300) {
       const url = response.data.url;
+      console.log("session url", url);
+      setLoading(false);
       window.open(url, "_blank");
     } else {
       console.log("--- error ---", response.data.message);
+      setLoading(false);
     }
-    setLoading(false);
   };
   return (
     <Box>

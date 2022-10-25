@@ -16,7 +16,8 @@ export default function Quizstep1() {
     navigate("/screen-fb8379a7");
   };
 
-  const toggleHandler = (index) => {
+  const toggleHandler = (index, e) => {
+    const checked = e.target.checked;
     let dataOfStep1 = localStorage.getItem("mainGoals");
     if (dataOfStep1 !== null) {
       dataOfStep1 = dataOfStep1.split(",");
@@ -28,13 +29,15 @@ export default function Quizstep1() {
       dataOfStep1 = [];
     }
 
-    if (dataOfStep1.includes(index)) {
+    if (!checked) {
       const removeIndex = dataOfStep1.indexOf(index);
       if (removeIndex > -1) {
         dataOfStep1.splice(removeIndex, 1);
       }
     } else {
-      dataOfStep1.push(index);
+      if (!dataOfStep1.includes(index)) {
+        dataOfStep1.push(index);
+      }
     }
 
     dataOfStep1 = dataOfStep1.join(",");
@@ -93,7 +96,7 @@ export default function Quizstep1() {
                           }),
                         }),
                       }}
-                      onChange={() => toggleHandler(index)}
+                      onChange={(e) => toggleHandler(index, e)}
                       defaultChecked={
                         localStorage.getItem("mainGoals") !== null &&
                         localStorage.getItem("mainGoals").includes(index)
