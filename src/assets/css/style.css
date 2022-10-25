@@ -685,7 +685,8 @@ span.MuiRating-visuallyHidden {
     font-size: 18px;
   }
 
-  .titleworks p {
+  .titleworks p,
+  .titleworks p span {
     font-size: 16px;
   }
 
