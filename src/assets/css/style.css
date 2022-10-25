@@ -346,6 +346,12 @@ h5.quesheading {
   color: #4f4f4f;
 }
 
+.titleworks p span {
+  display: grid;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+
 .loader-img {
   width: 100px;
   display: block;

@@ -34,10 +34,10 @@ export default function Quizstep15() {
         }}
       >
         <div className="expandIconWrapper">
-          <img src={closeaco}></img>
+          <img src={closeaco} alt="closeaco"></img>
         </div>
         <div className="collapsIconWrapper">
-          <img src={plusaco}></img>
+          <img src={plusaco} alt="plusaco"></img>
         </div>
       </Box>
     );

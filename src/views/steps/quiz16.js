@@ -43,12 +43,11 @@ export default function Quizstep16() {
     if (response && response.status < 300) {
       const url = response.data.url;
       console.log("session url", url);
-      setLoading(false);
       window.open(url, "_blank");
     } else {
       console.log("--- error ---", response.data.message);
-      setLoading(false);
     }
+    setLoading(false);
   };
   return (
     <Box>
@@ -74,7 +73,9 @@ export default function Quizstep16() {
                   secondary={
                     <React.Fragment>
                       {mainGoalIndexes.map((index) => (
-                        <Typography>- {MAIN_GOALS_LIST[index]}</Typography>
+                        <Typography key={"typo_16_" + index} component="span">
+                          - {MAIN_GOALS_LIST[index]}
+                        </Typography>
                       ))}
                     </React.Fragment>
                   }
@@ -89,7 +90,7 @@ export default function Quizstep16() {
                   primary="Are There Other Goals You Want To Work On? "
                   secondary={
                     <React.Fragment>
-                      <Typography>
+                      <Typography component="span">
                         {otherGoalIndex !== null
                           ? "- " + OTHER_GOALS_LIST[otherGoalIndex]
                           : ""}
@@ -106,7 +107,9 @@ export default function Quizstep16() {
                   primary={`In A Typical Week, How Many "Bad" Days Do You Have?`}
                   secondary={
                     <React.Fragment>
-                      <Typography>{badDays !== null ? badDays : 0}</Typography>
+                      <Typography component="span">
+                        {badDays !== null ? badDays : 0}
+                      </Typography>
                     </React.Fragment>
                   }
                 />
@@ -119,7 +122,7 @@ export default function Quizstep16() {
                   primary={`In A Typical Week, How Many Good Days Do You Have?`}
                   secondary={
                     <React.Fragment>
-                      <Typography>
+                      <Typography component="span">
                         {goodDays !== null ? goodDays : 0}
                       </Typography>
                     </React.Fragment>
@@ -134,7 +137,7 @@ export default function Quizstep16() {
                   primary="How Are Your Sleeping Patterns? "
                   secondary={
                     <React.Fragment>
-                      <Typography>
+                      <Typography component="span">
                         {sleepingPatternIndex !== null
                           ? "- " + SLEEPING_PATTENRS_LIST[sleepingPatternIndex]
                           : ""}

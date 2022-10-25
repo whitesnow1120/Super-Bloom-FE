@@ -27,7 +27,7 @@ const Home = () => {
       </Box>
       <Container className="privacypolicy">
         <Typography>
-          Learn more in our <a>Privacy Policy</a>
+          Learn more in our <a href="/">Privacy Policy</a>
         </Typography>
       </Container>
     </>
