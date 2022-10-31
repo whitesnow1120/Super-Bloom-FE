@@ -8,8 +8,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 
 import QuizHeader from "../../components/quizheader";
 
-import plusaco from "../../assets/img/plusicon.png";
-import closeaco from "../../assets/img/closeicon.png";
+import plusIcon from "../../assets/img/plusicon.png";
+import closeIcon from "../../assets/img/closeicon.png";
 
 export default function Quizstep15() {
   const navigate = useNavigate();
@@ -34,10 +34,10 @@ export default function Quizstep15() {
         }}
       >
         <div className="expandIconWrapper">
-          <img src={closeaco} alt="closeaco"></img>
+          <img src={closeIcon} alt="closeIcon"></img>
         </div>
         <div className="collapsIconWrapper">
-          <img src={plusaco} alt="plusaco"></img>
+          <img src={plusIcon} alt="plusIcon"></img>
         </div>
       </Box>
     );
