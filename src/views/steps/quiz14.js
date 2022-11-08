@@ -25,25 +25,25 @@ export default function Quizstep14() {
       <QuizHeader skip={"/screen-296bb8d5"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography variant="h6" className="counternumber">
+              <Typography variant="h6" className="counterNumber">
                 {" "}
                 14
               </Typography>
-              <Typography className="questionnumber">Question 14/15</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Question 14/15</Typography>
+              <Typography variant="h5" className="questionHeading">
                 How Our Program Works{" "}
               </Typography>
             </Card>
           </Box>
           <Grid sx={{ mb: 4, mt: 4 }}>
             <List sx={{ width: "100%" }}>
-              <ListItem alignItems="flex-start" className="lsitingwekkend">
+              <ListItem alignItems="flex-start" className="listingWorks">
                 <img alt="Remy Sharp" src={document} />
 
                 <ListItemText
-                  className="titleworks"
+                  className="titleWorks"
                   primary="Daily SMS Check-in"
                   secondary={
                     <React.Fragment>
@@ -53,11 +53,11 @@ export default function Quizstep14() {
                 />
               </ListItem>
 
-              <ListItem alignItems="flex-start" className="lsitingwekkend">
+              <ListItem alignItems="flex-start" className="listingWorks">
                 <img alt="Remy Sharp" src={edit} />
 
                 <ListItemText
-                  className="titleworks"
+                  className="titleWorks"
                   primary="New Exercise Every Sunday"
                   secondary={
                     <React.Fragment>
@@ -69,10 +69,10 @@ export default function Quizstep14() {
                 />
               </ListItem>
 
-              <ListItem alignItems="flex-start" className="lsitingwekkend">
+              <ListItem alignItems="flex-start" className="listingWorks">
                 <img alt="Remy Sharp" src={password} />
                 <ListItemText
-                  className="titleworks"
+                  className="titleWorks"
                   primary="Secure and private"
                   secondary={
                     <React.Fragment>
@@ -82,10 +82,10 @@ export default function Quizstep14() {
                 />
               </ListItem>
 
-              <ListItem alignItems="flex-start" className="lsitingwekkend">
+              <ListItem alignItems="flex-start" className="listingWorks">
                 <img alt="Remy Sharp" src={active} />
                 <ListItemText
-                  className="titleworks"
+                  className="titleWorks"
                   primary="Progress Tracking"
                   secondary={
                     <React.Fragment>
@@ -98,7 +98,7 @@ export default function Quizstep14() {
               </ListItem>
             </List>
           </Grid>
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             Continue <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

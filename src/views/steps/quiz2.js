@@ -17,14 +17,14 @@ export default function Quizstep1() {
       <QuizHeader skip={"/screen-d375fd85"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography variant="h6" className="counternumber">
+              <Typography variant="h6" className="counterNumber">
                 {" "}
                 2
               </Typography>
-              <Typography className="questionnumber">Question 2/15</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Question 2/15</Typography>
+              <Typography variant="h5" className="questionHeading">
                 In A Typical Week, How Many "Bad" Days Do You Have?
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
@@ -39,7 +39,7 @@ export default function Quizstep1() {
             </Card>
           </Box>
 
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             Let's start working on happiness{" "}
             <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>

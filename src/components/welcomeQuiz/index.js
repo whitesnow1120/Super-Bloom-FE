@@ -15,10 +15,10 @@ export default function WelcomeQuiz() {
     <Box>
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h1" className="heading">
-                Welcome to <span className="titleseconnd"> Super Bloom!</span>
+                Welcome to <span className="titleSecond"> Super Bloom!</span>
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
                 Before getting started, please don't feel shy to overshare - all
@@ -32,7 +32,7 @@ export default function WelcomeQuiz() {
             </Card>
           </Box>
 
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             Let's get started! <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

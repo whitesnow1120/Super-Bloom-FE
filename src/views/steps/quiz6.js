@@ -25,14 +25,14 @@ export default function Quizstep6() {
       <QuizHeader skip={"/screen-3a39b32d"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography variant="h6" className="counternumber">
+              <Typography variant="h6" className="counterNumber">
                 {" "}
                 6
               </Typography>
-              <Typography className="questionnumber">Question 6/15</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Question 6/15</Typography>
+              <Typography variant="h5" className="questionHeading">
                 Are There Other Goals You Want To Work On?{" "}
               </Typography>
             </Card>
@@ -51,7 +51,7 @@ export default function Quizstep6() {
             >
               {Object.keys(OTHER_GOALS_LIST).map((index) => (
                 <Sheet
-                  className="inputborder"
+                  className="inputBorder"
                   key={OTHER_GOALS_LIST[index]}
                   sx={{ px: 3, py: 1.7, borderRadius: "50px" }}
                 >
@@ -87,7 +87,7 @@ export default function Quizstep6() {
             </RadioGroup>
           </Grid>
 
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             Take me to happiness <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

@@ -25,14 +25,14 @@ export default function Quizstep10() {
       <QuizHeader skip={"/screen-f5e829bb"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography variant="h6" className="counternumber">
+              <Typography variant="h6" className="counterNumber">
                 {" "}
                 10
               </Typography>
-              <Typography className="questionnumber">Question 10/15</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Question 10/15</Typography>
+              <Typography variant="h5" className="questionHeading">
                 How Are Your Sleeping Patterns?{" "}
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
@@ -59,7 +59,7 @@ export default function Quizstep10() {
             >
               {Object.keys(SLEEPING_PATTENRS_LIST).map((index) => (
                 <Sheet
-                  className="inputborder"
+                  className="inputBorder"
                   key={SLEEPING_PATTENRS_LIST[index]}
                   sx={{ px: 3, py: 1.7, borderRadius: "50px" }}
                 >
@@ -95,7 +95,7 @@ export default function Quizstep10() {
             </RadioGroup>
           </Grid>
 
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             Next <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

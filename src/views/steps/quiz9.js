@@ -50,14 +50,14 @@ export default function Quizstep9() {
       <QuizHeader skip={"/screen-8556a584"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography variant="h6" className="counternumber">
+              <Typography variant="h6" className="counterNumber">
                 {" "}
                 9
               </Typography>
-              <Typography className="questionnumber">Question 9/15</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Question 9/15</Typography>
+              <Typography variant="h5" className="questionHeading">
                 In A Typical Week, How Many Good Days Do You Have?
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
@@ -90,7 +90,7 @@ export default function Quizstep9() {
             />
           </Grid>
 
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             Next <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

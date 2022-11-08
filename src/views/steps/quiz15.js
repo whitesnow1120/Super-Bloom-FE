@@ -48,107 +48,107 @@ export default function Quizstep15() {
       <QuizHeader skip={"/screen-w4h27br1"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography variant="h6" className="counternumber">
+              <Typography variant="h6" className="counterNumber">
                 {" "}
                 15
               </Typography>
-              <Typography className="questionnumber">Question 15/15</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Question 15/15</Typography>
+              <Typography variant="h5" className="questionHeading">
                 Frequently Asked Questions{" "}
               </Typography>
             </Card>
           </Box>
 
           <Grid sx={{ mt: 4, mb: 4 }}>
-            <Accordion className="customeaccodina">
+            <Accordion className="customAccordion">
               <AccordionSummary
                 sx={{ pr: 0, pl: 2 }}
                 expandIcon={<CustomExpandIcon />}
                 aria-controls="panel1d-content"
                 id="panel1d-header"
               >
-                <Typography className="accodianheader">
+                <Typography className="accordionHeader">
                   Is there a limit on how much
                   <br /> I can message coaches?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="accodiandesc">
+                <Typography className="accordionDesc">
                   No! Our coaches are here to help. We encourage you to reach
                   out to our coaches as much as you need. They are liscensed
                   psychologists and there is no extra cost for contacting them!
                 </Typography>
               </AccordionDetails>
             </Accordion>
-            <Accordion className="customeaccodina">
+            <Accordion className="customAccordion">
               <AccordionSummary
                 sx={{ pr: 0, pl: 2 }}
                 expandIcon={<CustomExpandIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
-                <Typography className="accodianheader">
+                <Typography className="accordionHeader">
                   How Much Does it Cost?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="accodiandesc">
+                <Typography className="accordionDesc">
                   Super Bloom's Program is only $8.25/Month ($99/Y). This is
                   much cheaper than traditional experts ($120/H).
                 </Typography>
               </AccordionDetails>
             </Accordion>
 
-            <Accordion className="customeaccodina">
+            <Accordion className="customAccordion">
               <AccordionSummary
                 sx={{ pr: 0, pl: 2 }}
                 expandIcon={<CustomExpandIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
-                <Typography className="accodianheader">
+                <Typography className="accordionHeader">
                   Who Built the Program?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="accodiandesc">
+                <Typography className="accordionDesc">
                   Our program is built and reviewed by experts that work on
                   people's happiness journeys.
                 </Typography>
               </AccordionDetails>
             </Accordion>
-            <Accordion className="customeaccodina">
+            <Accordion className="customAccordion">
               <AccordionSummary
                 sx={{ pr: 0, pl: 2 }}
                 expandIcon={<CustomExpandIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
-                <Typography className="accodianheader">
+                <Typography className="accordionHeader">
                   Do you offer a Free Trial?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="accodiandesc">
+                <Typography className="accordionDesc">
                   Yes! Our program is completely free for the first 2 weeks.
                 </Typography>
               </AccordionDetails>
             </Accordion>
-            <Accordion className="customeaccodina">
+            <Accordion className="customAccordion">
               <AccordionSummary
                 sx={{ pr: 0, pl: 2 }}
                 expandIcon={<CustomExpandIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
-                <Typography className="accodianheader">
+                <Typography className="accordionHeader">
                   What is your refund policy?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography className="accodiandesc">
+                <Typography className="accordionDesc">
                   If you do not feel like our program is a good match for you,
                   just text your coach and we will offer you a full refund. No
                   questions asked.
@@ -157,7 +157,7 @@ export default function Quizstep15() {
             </Accordion>
           </Grid>
 
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             Continue <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

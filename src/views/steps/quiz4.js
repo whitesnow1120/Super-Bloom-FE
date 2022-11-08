@@ -17,14 +17,14 @@ export default function Quizstep4() {
       <QuizHeader skip={"/screen-bd393b98"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography variant="h6" className="counternumber">
+              <Typography variant="h6" className="counterNumber">
                 {" "}
                 4
               </Typography>
-              <Typography className="questionnumber">Question 4/15</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Question 4/15</Typography>
+              <Typography variant="h5" className="questionHeading">
                 We'll Help You Become More Grateful{" "}
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
@@ -38,7 +38,7 @@ export default function Quizstep4() {
             </Card>
           </Box>
 
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             Let's start working on happiness{" "}
             <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>

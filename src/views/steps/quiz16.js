@@ -49,26 +49,27 @@ export default function Quizstep16() {
     }
     setLoading(false);
   };
+
   return (
     <Box>
       <QuizHeader skipBtn={false} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography className="questionnumber">Excellent !!!</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Excellent !!!</Typography>
+              <Typography variant="h5" className="questionHeading">
                 Feel free to update your choice if needed
               </Typography>
             </Card>
           </Box>
           <Grid sx={{ mb: 4, mt: 4 }}>
             <List sx={{ width: "100%" }}>
-              <ListItem alignItems="flex-start" className="lsitingwekkend">
+              <ListItem alignItems="flex-start" className="listingWorks">
                 <img alt="Remy Sharp" src={document} />
 
                 <ListItemText
-                  className="titleworks"
+                  className="titleWorks"
                   primary="What's your #1 Goal?"
                   secondary={
                     <React.Fragment>
@@ -82,11 +83,11 @@ export default function Quizstep16() {
                 />
               </ListItem>
 
-              <ListItem alignItems="flex-start" className="lsitingwekkend">
+              <ListItem alignItems="flex-start" className="listingWorks">
                 <img alt="Remy Sharp" src={document} />
 
                 <ListItemText
-                  className="titleworks"
+                  className="titleWorks"
                   primary="Are There Other Goals You Want To Work On? "
                   secondary={
                     <React.Fragment>
@@ -100,10 +101,10 @@ export default function Quizstep16() {
                 />
               </ListItem>
 
-              <ListItem alignItems="flex-start" className="lsitingwekkend">
+              <ListItem alignItems="flex-start" className="listingWorks">
                 <img alt="Remy Sharp" src={document} />
                 <ListItemText
-                  className="titleworks"
+                  className="titleWorks"
                   primary={`In A Typical Week, How Many "Bad" Days Do You Have?`}
                   secondary={
                     <React.Fragment>
@@ -115,10 +116,10 @@ export default function Quizstep16() {
                 />
               </ListItem>
 
-              <ListItem alignItems="flex-start" className="lsitingwekkend">
+              <ListItem alignItems="flex-start" className="listingWorks">
                 <img alt="Remy Sharp" src={document} />
                 <ListItemText
-                  className="titleworks"
+                  className="titleWorks"
                   primary={`In A Typical Week, How Many Good Days Do You Have?`}
                   secondary={
                     <React.Fragment>
@@ -130,10 +131,10 @@ export default function Quizstep16() {
                 />
               </ListItem>
 
-              <ListItem alignItems="flex-start" className="lsitingwekkend">
+              <ListItem alignItems="flex-start" className="listingWorks">
                 <img alt="Remy Sharp" src={document} />
                 <ListItemText
-                  className="titleworks"
+                  className="titleWorks"
                   primary="How Are Your Sleeping Patterns? "
                   secondary={
                     <React.Fragment>
@@ -147,10 +148,10 @@ export default function Quizstep16() {
                 />
               </ListItem>
 
-              <ListItem alignItems="flex-start" className="lsitingwekkend">
+              <ListItem alignItems="flex-start" className="listingWorks">
                 <img alt="Remy Sharp" src={document} />
                 <ListItemText
-                  className="titleworks"
+                  className="titleWorks"
                   primary="How Experienced Are You With Journaling?"
                   secondary={
                     <React.Fragment>
@@ -162,7 +163,7 @@ export default function Quizstep16() {
             </List>
           </Grid>
           {!loading ? (
-            <Button onClick={clickHandler} className="btnbutton">
+            <Button onClick={clickHandler} className="nextButton">
               Start Trial <ArrowForwardIosIcon></ArrowForwardIosIcon>
             </Button>
           ) : (

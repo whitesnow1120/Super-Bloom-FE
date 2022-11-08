@@ -19,13 +19,13 @@ const Home = () => {
 
   return (
     <>
-      <Box className="welcomheader">
+      <Box className="welcomeHeader">
         <Stack>
           <QuizHeader skipBtn={false} />
           <WelcomeQuiz />
         </Stack>
       </Box>
-      <Container className="privacypolicy">
+      <Container className="privacyPolicy">
         <Typography>
           Learn more in our <a href="/">Privacy Policy</a>
         </Typography>

@@ -9,15 +9,15 @@ body {
 p {
   font-family: "Poppins", sans-serif !important;
 }
-.inputborder input {
+.inputBorder input {
   left: 0px;
   top: 0px;
 }
-.inputborder label {
+.inputBorder label {
   padding-left: 10px;
   padding-right: 10px;
 }
-.inputborder > span > span > span {
+.inputBorder > span > span > span {
   border-color: #e0e0e0;
   border-radius: 100px;
   overflow: hidden;
@@ -25,11 +25,11 @@ p {
   border: 1px solid #000;
 }
 
-.inputborder > span > span > span:hover {
+.inputBorder > span > span > span:hover {
   border-color: #a25cd9;
 }
 
-.inputborder > span > span > span {
+.inputBorder > span > span > span {
   border-color: #e0e0e0;
 }
 
@@ -47,11 +47,11 @@ p {
   border-radius: 0px 0px 30px 30px;
 }
 
-.maincard {
+.mainCard {
   margin-top: -110px !important;
 }
 
-a.logotitle {
+a.logoTitle {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -62,11 +62,11 @@ a.logotitle {
   color: #ffffff;
 }
 
-.rootquiz {
+.rootQuiz {
   padding-bottom: 40px;
 }
 
-.backbutton svg {
+.backButton svg {
   color: #fff;
   cursor: pointer;
 }
@@ -83,12 +83,12 @@ a.logotitle {
   height: 6px !important;
   /* margin-left: -1px; */
 }
-.backbutton:hover svg,
-.skiptext:hover {
+.backButton:hover svg,
+.skipText:hover {
   color: #a25cd9;
 }
 
-.customeaccodina {
+.customAccordion {
   border-bottom: 1px solid #e0e0e0;
   box-shadow: none !important;
   padding-bottom: 15px;
@@ -101,7 +101,7 @@ a.logotitle {
 .MuiAccordionSummary-expandIconWrapper {
   transform: none !important;
 }
-.accodianheader {
+.accordionHeader {
   font-family: "Poppins" !important;
   font-style: normal !important;
   font-weight: 400 !important;
@@ -109,14 +109,14 @@ a.logotitle {
   color: #4f4f4f;
 }
 
-.customeaccodina:before {
+.customAccordion:before {
   display: none;
 }
 .MuiAccordionSummary-root {
   min-height: auto !important;
 }
 
-.accodiandesc {
+.accordionDesc {
   width: 92%;
   font-family: "Poppins" !important;
   font-style: normal !important;
@@ -130,11 +130,11 @@ a.logotitle {
   margin: auto;
 }
 
-.welcomheader .maincard {
+.welcomeHeader .mainCard {
   margin-top: -80px !important;
 }
 
-.maincard .welcomeBox {
+.mainCard .welcomeBox {
   background: #ffffff;
   box-shadow: 0px 8px 22px rgb(0 0 0 / 9%);
   border-radius: 15px;
@@ -144,12 +144,8 @@ a.logotitle {
   padding: 35px 25px 30px 25px;
 }
 
-.titleseconnd {
+.titleSecond {
   color: #a25cd9;
-}
-
-.quiz_outer {
-  padding-bottom: 20px;
 }
 
 h1.heading {
@@ -170,7 +166,7 @@ p.description {
   font-size: 18px;
   color: #4f4f4f;
 }
-button.btnbutton {
+button.nextButton {
   background: #4e4096;
   border-radius: 10px;
   display: flex;
@@ -193,17 +189,17 @@ button.btnbutton {
   width: 100%;
   border: 1px solid #4e4096;
 }
-button.btnbutton:hover {
+button.nextButton:hover {
   box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
     0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
   background: #413679;
 }
 
-button.btnbutton svg {
+button.nextButton svg {
   width: 18px;
 }
 
-h2.skiptext {
+h2.skipText {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -214,7 +210,7 @@ h2.skiptext {
   color: #ffffff;
 }
 
-.counternumber {
+.counterNumber {
   position: absolute;
   width: 42px;
   height: 42px;
@@ -223,7 +219,6 @@ h2.skiptext {
   border-radius: 5px;
   left: 50%;
   transform: translate(-50%, 0px);
-  transform: translate(, -50%);
   top: -21px;
   right: 50%;
   text-align: center;
@@ -234,7 +229,7 @@ h2.skiptext {
   color: #000000;
 }
 
-p.questionnumber {
+p.questionNumber {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -247,7 +242,7 @@ p.questionnumber {
   text-align: center;
 }
 
-h5.quesheading {
+h5.questionHeading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -283,7 +278,7 @@ h5.quesheading {
   border: 3px solid #a25cd9;
 }
 
-.customcheckox .MuiFormControlLabel-label {
+.customCheckBox .MuiFormControlLabel-label {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
@@ -294,35 +289,35 @@ h5.quesheading {
   margin-top: -4px;
 }
 
-.customcheckox .MuiCheckbox-root {
+.customCheckBox .MuiCheckbox-root {
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-.customcheckox .MuiCheckbox-root svg path {
+.customCheckBox .MuiCheckbox-root svg path {
   fill: #a25cd9;
 }
 
-.customcheckox {
+.customCheckBox {
   align-items: flex-start !important;
 }
 
-.outerlcheckbox {
+.outerCheckBox {
   border: 1px solid #a25cd9;
   border-radius: 5px;
   padding: 12px 20px;
 }
 
-.lsitingwekkend img {
+.listingWorks img {
   padding-top: 5px;
 }
 
-.lsitingwekkend {
+.listingWorks {
   padding-right: 0px !important;
   column-gap: 20px;
 }
 
-.titleworks span {
+.titleWorks span {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -331,12 +326,12 @@ h5.quesheading {
   color: #a25cd9;
 }
 
-.titleworks {
+.titleWorks {
   margin-top: 0px !important;
   text-align: left !important;
 }
 
-.titleworks p {
+.titleWorks p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -346,13 +341,13 @@ h5.quesheading {
   color: #4f4f4f;
 }
 
-.titleworks p span {
+.titleWorks p span {
   display: grid;
   font-weight: 400;
   color: #4f4f4f;
 }
 
-.loader-img {
+.loaderImage {
   width: 100px;
   display: block;
   text-align: center;
@@ -360,7 +355,7 @@ h5.quesheading {
   margin: 60px auto 0px;
 }
 
-.complete-img {
+.completedImage {
   width: 200px;
   display: block;
   text-align: center;
@@ -368,7 +363,7 @@ h5.quesheading {
   margin: 60px auto 0px;
 }
 
-.complete-message {
+.completedMessage {
   color: #a25cd9;
   font-style: normal;
   font-weight: 600 !important;
@@ -377,7 +372,7 @@ h5.quesheading {
   text-transform: uppercase;
 }
 
-.privacypolicy p {
+.privacyPolicy p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -391,23 +386,23 @@ h5.quesheading {
   max-width: 600px;
 }
 
-.privacypolicy a {
+.privacyPolicy a {
   text-decoration: none;
   color: #a25cd9;
   cursor: pointer;
 }
 
-.privacypolicy a:hover {
+.privacyPolicy a:hover {
   text-decoration: underline;
 }
 
-.privacypolicy {
+.privacyPolicy {
   max-width: 100% !important;
   text-align: center;
   margin-top: 80px;
 }
 
-.ratingcustome {
+.ratingCustom {
   overflow: hidden;
   border: 1px solid #a25cd9;
 
@@ -426,7 +421,7 @@ h5.quesheading {
   transform: none !important;
 }
 
-.ratingcustome {
+.ratingCustom {
   border-radius: 50px;
   overflow: hidden;
   width: 100%;
@@ -475,11 +470,7 @@ h5.quesheading {
   ~ label {
   border-right: 0px solid !important;
 }
-.errormsg {
-  color: #a25cd9 !important;
-  margin-bottom: 10px;
-}
-.ratingvalue p {
+.ratingValue p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -488,11 +479,10 @@ h5.quesheading {
   color: #000000;
 }
 
-.ratingvalue {
+.ratingValue {
   display: grid !important;
   align-items: center;
   margin-bottom: 20px;
-  /* / justify-content: space-between; / */
   flex-direction: row !important;
   grid-template-columns: 33.33% 33.33% 33.33%;
 }
@@ -540,7 +530,7 @@ span.MuiRating-visuallyHidden {
   width: 100%;
   line-height: 1px;
 }
-.blanckiamgess {
+.blankImage {
   width: 24px;
 }
 .MuiAccordionSummary-content {
@@ -631,20 +621,20 @@ span.MuiRating-visuallyHidden {
 }
 
 @media (max-width: 575px) {
-  .privacypolicy p {
+  .privacyPolicy p {
     width: 100%;
     max-width: 100%;
   }
-  h5.quesheading {
+  h5.questionHeading {
     margin-bottom: 10px;
   }
-  .welcomheader .headerQuiz {
+  .welcomeHeader .headerQuiz {
     padding-bottom: 125px;
   }
   .headerQuiz {
     border-radius: 0px 0px 10px 10px;
   }
-  .welcomheader {
+  .welcomeHeader {
     height: calc(100vh - 40px);
   }
   .CustomContainer,
@@ -652,23 +642,23 @@ span.MuiRating-visuallyHidden {
     width: 100%;
   }
 
-  h5.quesheading {
+  h5.questionHeading {
     font-size: 18px;
   }
 
-  p.questionnumber {
+  p.questionNumber {
     font-size: 14px;
   }
 
-  .counternumber {
+  .counterNumber {
     font-size: 18px !important;
   }
 
-  h2.skiptext {
+  h2.skipText {
     font-size: 16px;
   }
 
-  a.logotitle {
+  a.logoTitle {
     font-size: 18px;
   }
 
@@ -676,17 +666,17 @@ span.MuiRating-visuallyHidden {
     font-size: 18px;
   }
 
-  button.btnbutton {
+  button.nextButton {
     margin-top: 40px;
     font-size: 16px;
   }
 
-  .titleworks span {
+  .titleWorks span {
     font-size: 18px;
   }
 
-  .titleworks p,
-  .titleworks p span {
+  .titleWorks p,
+  .titleWorks p span {
     font-size: 16px;
   }
 
@@ -694,7 +684,7 @@ span.MuiRating-visuallyHidden {
     font-size: 16px;
   }
 
-  .privacypolicy {
+  .privacyPolicy {
     max-width: 100% !important;
     position: absolute;
     bottom: 20px;
@@ -702,11 +692,11 @@ span.MuiRating-visuallyHidden {
     text-align: center;
   }
 
-  .accodianheader {
+  .accordionHeader {
     font-size: 18px !important;
   }
 
-  .accodiandesc {
+  .accordionDesc {
     font-size: 16px !important;
   }
 

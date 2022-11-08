@@ -114,14 +114,14 @@ export default function Quizstep12() {
       <QuizHeader skip={"/screen-57f5661b"} skipBtn={false} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography variant="h6" className="counternumber">
+              <Typography variant="h6" className="counterNumber">
                 {" "}
                 12
               </Typography>
-              <Typography className="questionnumber">Question 12/15</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Question 12/15</Typography>
+              <Typography variant="h5" className="questionHeading">
                 Are You Ready To Commit To Feeling Happier?{" "}
               </Typography>
               <Typography className="description">
@@ -135,9 +135,9 @@ export default function Quizstep12() {
             sx={{ mb: 4, mt: 4 }}
             className={error ? "horizontalShake" : ""}
           >
-            <FormGroup className="outerlcheckbox">
+            <FormGroup className="outerCheckBox">
               <FormControlLabel
-                className="customcheckox"
+                className="customCheckBox"
                 control={
                   <BpCheckbox
                     icon={<BpIcon />}
@@ -152,7 +152,7 @@ export default function Quizstep12() {
             </FormGroup>
           </Grid>
 
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             I'm committed <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

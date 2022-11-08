@@ -49,14 +49,14 @@ export default function Quizstep1() {
       <QuizHeader skip={"/screen-fb8379a7"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography variant="h6" className="counternumber">
+              <Typography variant="h6" className="counterNumber">
                 {" "}
                 1
               </Typography>
-              <Typography className="questionnumber">Question 1/15</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Question 1/15</Typography>
+              <Typography variant="h5" className="questionHeading">
                 What's your #1 Goal?
               </Typography>
               <Typography className="description">
@@ -71,7 +71,7 @@ export default function Quizstep1() {
                 {Object.keys(MAIN_GOALS_LIST).map((index) => (
                   <ListItem
                     key={MAIN_GOALS_LIST[index]}
-                    className="inputborder"
+                    className="inputBorder"
                   >
                     <Checkbox
                       componentsProps={{
@@ -114,7 +114,7 @@ export default function Quizstep1() {
             </Box>
           </Grid>
 
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             Let's achieve these goals{" "}
             <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>

@@ -29,18 +29,18 @@ export default function QuizHeader(props) {
     <Grid className="headerQuiz" bgcolor="#4E4096">
       <Container>
         <Box className="CustomContainer">
-          <Box className="backbutton">
+          <Box className="backButton">
             <ArrowBackIcon onClick={() => navigate(-1)} />
           </Box>
-          <Link variant="h4" className="logotitle">
+          <Link variant="h4" className="logoTitle">
             Quiz
           </Link>
           {props.skipBtn ? (
-            <Typography variant="h2" onClick={skipHandler} className="skiptext">
+            <Typography variant="h2" onClick={skipHandler} className="skipText">
               Skip
             </Typography>
           ) : (
-            <Box className="blanckiamgess"></Box>
+            <Box className="blankImage"></Box>
           )}
         </Box>
       </Container>

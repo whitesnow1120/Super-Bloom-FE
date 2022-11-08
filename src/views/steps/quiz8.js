@@ -43,14 +43,14 @@ export default function Quizstep8() {
       <QuizHeader skip={"/screen-1246ff11"} skipBtn={true} />
       <Container>
         <Grid className="innerContainer">
-          <Box className="maincard" sx={{ mb: 2 }}>
+          <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
-              <Typography variant="h6" className="counternumber">
+              <Typography variant="h6" className="counterNumber">
                 {" "}
                 8
               </Typography>
-              <Typography className="questionnumber">Question 8/15</Typography>
-              <Typography variant="h5" className="quesheading">
+              <Typography className="questionNumber">Question 8/15</Typography>
+              <Typography variant="h5" className="questionHeading">
                 In A Typical Week, How Many "Bad" Days Do You Have?{" "}
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
@@ -86,7 +86,7 @@ export default function Quizstep8() {
             />
           </Grid>
 
-          <Button onClick={clickHandler} className="btnbutton">
+          <Button onClick={clickHandler} className="nextButton">
             Next <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

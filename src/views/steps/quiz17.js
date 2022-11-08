@@ -12,8 +12,8 @@ export default function Quizstep17() {
       <Container>
         <Grid className="innerContainer">
           <Grid sx={{ mb: 4, mt: 4 }}>
-            <img className="complete-img" src={completeImg} alt="" />
-            <Typography className="complete-message">Done</Typography>
+            <img className="completedImage" src={completeImg} alt="" />
+            <Typography className="completedMessage">Done</Typography>
           </Grid>
         </Grid>
       </Container>
