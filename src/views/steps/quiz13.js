@@ -23,12 +23,11 @@ export default function Quizstep13() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 13
               </Typography>
               <Typography className="questionNumber"></Typography>
               <Typography variant="h5" className="questionHeading">
-                We're Building Your Plan!{" "}
+                We're Building Your Plan!
               </Typography>
             </Card>
           </Box>

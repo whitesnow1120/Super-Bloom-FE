@@ -20,7 +20,6 @@ export default function Quizstep1() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 2
               </Typography>
               <Typography className="questionNumber">Question 2/15</Typography>
@@ -29,7 +28,7 @@ export default function Quizstep1() {
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
                 Happy people generally have to work on their happiness -
-                everyone has bad days!{" "}
+                everyone has bad days!
               </Typography>
               <Typography className="description">
                 There is no single key for happiness and it doesn't come
@@ -40,7 +39,7 @@ export default function Quizstep1() {
           </Box>
 
           <Button onClick={clickHandler} className="nextButton">
-            Let's start working on happiness{" "}
+            Let's start working on happiness
             <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

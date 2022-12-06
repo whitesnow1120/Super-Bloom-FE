@@ -20,12 +20,11 @@ export default function Quizstep4() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 4
               </Typography>
               <Typography className="questionNumber">Question 4/15</Typography>
               <Typography variant="h5" className="questionHeading">
-                We'll Help You Become More Grateful{" "}
+                We'll Help You Become More Grateful
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
                 Gratitude is at the core of happy life - not just something you
@@ -33,13 +32,13 @@ export default function Quizstep4() {
               </Typography>
               <Typography className="description">
                 Practicing gratitude and implementing it in your routine will
-                make you happier.{" "}
+                make you happier.
               </Typography>
             </Card>
           </Box>
 
           <Button onClick={clickHandler} className="nextButton">
-            Let's start working on happiness{" "}
+            Let's start working on happiness
             <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

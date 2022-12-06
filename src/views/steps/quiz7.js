@@ -20,16 +20,15 @@ export default function Quizstep7() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 7
               </Typography>
               <Typography className="questionNumber">Question 7/15</Typography>
               <Typography variant="h5" className="questionHeading">
-                Share A Little About Your Starting Mindset{" "}
+                Share A Little About Your Starting Mindset
               </Typography>
               <Typography className="description">
                 Don't forget: Your information is confidential and we won't
-                share it!{" "}
+                share it!
               </Typography>
             </Card>
           </Box>

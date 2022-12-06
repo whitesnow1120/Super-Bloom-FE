@@ -11,8 +11,8 @@ import {
   FormControlLabel,
   FormGroup,
 } from "@mui/material";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { styled } from "@mui/material/styles";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import QuizHeader from "../../components/quizheader";
 
@@ -117,17 +117,16 @@ export default function Quizstep12() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 12
               </Typography>
               <Typography className="questionNumber">Question 12/15</Typography>
               <Typography variant="h5" className="questionHeading">
-                Are You Ready To Commit To Feeling Happier?{" "}
+                Are You Ready To Commit To Feeling Happier?
               </Typography>
               <Typography className="description">
                 Consistency and habits are the keys to success. Are you willing
                 to commit to spending 5 minutes a day for the next 12 weeks to
-                achieve your goals?{" "}
+                achieve your goals?
               </Typography>
             </Card>
           </Box>

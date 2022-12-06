@@ -53,7 +53,6 @@ export default function Quizstep9() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 9
               </Typography>
               <Typography className="questionNumber">Question 9/15</Typography>
@@ -61,12 +60,12 @@ export default function Quizstep9() {
                 In A Typical Week, How Many Good Days Do You Have?
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
-                Good days are days you would love to relive!{" "}
+                Good days are days you would love to relive!
               </Typography>
               <Typography className="description">
                 These don't have to be extravagant, sometimes a good day just
                 means you had a great coffee, caught up with an old friend or
-                felt relieved about finishing a task you've been pushing off!{" "}
+                felt relieved about finishing a task you've been pushing off!
               </Typography>
             </Card>
           </Box>

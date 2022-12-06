@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { styled } from "@mui/material/styles";
 import Rating from "@mui/material/Rating";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Stack } from "@mui/system";
 
 import QuizHeader from "../../components/quizheader";
@@ -42,7 +42,6 @@ export default function Quizstep11() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 11
               </Typography>
               <Typography className="questionNumber">Question 11/15</Typography>

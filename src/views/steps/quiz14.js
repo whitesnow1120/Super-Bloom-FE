@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import QuizHeader from "../../components/quizheader";
 
@@ -28,12 +28,11 @@ export default function Quizstep14() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 14
               </Typography>
               <Typography className="questionNumber">Question 14/15</Typography>
               <Typography variant="h5" className="questionHeading">
-                How Our Program Works{" "}
+                How Our Program Works
               </Typography>
             </Card>
           </Box>

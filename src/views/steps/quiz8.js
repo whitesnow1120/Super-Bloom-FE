@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Slider from "@mui/material/Slider";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import QuizHeader from "../../components/quizheader";
 
@@ -46,23 +46,22 @@ export default function Quizstep8() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 8
               </Typography>
               <Typography className="questionNumber">Question 8/15</Typography>
               <Typography variant="h5" className="questionHeading">
-                In A Typical Week, How Many "Bad" Days Do You Have?{" "}
+                In A Typical Week, How Many "Bad" Days Do You Have?
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
-                Bad days, are days you would of liked to skip.{" "}
+                Bad days, are days you would of liked to skip.
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
                 Public Service Announcement: Everyone has bad days, we're only
-                human.{" "}
+                human.
               </Typography>
               <Typography className="description">
                 These could be days where you felt overwhelmed at work, woke up
-                tired or felt anxious.{" "}
+                tired or felt anxious.
               </Typography>
             </Card>
           </Box>

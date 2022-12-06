@@ -52,7 +52,6 @@ export default function Quizstep1() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 1
               </Typography>
               <Typography className="questionNumber">Question 1/15</Typography>
@@ -61,7 +60,7 @@ export default function Quizstep1() {
               </Typography>
               <Typography className="description">
                 Don't worry, you will be able to add more goals throughout this
-                quiz!{" "}
+                quiz!
               </Typography>
             </Card>
           </Box>
@@ -115,7 +114,7 @@ export default function Quizstep1() {
           </Grid>
 
           <Button onClick={clickHandler} className="nextButton">
-            Let's achieve these goals{" "}
+            Let's achieve these goals
             <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

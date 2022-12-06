@@ -20,12 +20,11 @@ export default function Quizstep5() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 5
               </Typography>
               <Typography className="questionNumber">Question 5/15</Typography>
               <Typography variant="h5" className="questionHeading">
-                We'll Help You Journal And Document Your Happiness Journey{" "}
+                We'll Help You Journal And Document Your Happiness Journey
               </Typography>
               <Typography className="description">
                 With the help of Super Bloom's team of experts, you will learn
@@ -36,7 +35,7 @@ export default function Quizstep5() {
           </Box>
 
           <Button onClick={clickHandler} className="nextButton">
-            I want to track my progress{" "}
+            I want to track my progress
             <ArrowForwardIosIcon></ArrowForwardIosIcon>
           </Button>
         </Grid>

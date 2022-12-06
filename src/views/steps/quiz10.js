@@ -28,20 +28,19 @@ export default function Quizstep10() {
           <Box className="mainCard" sx={{ mb: 2 }}>
             <Card className="welcomeBox">
               <Typography variant="h6" className="counterNumber">
-                {" "}
                 10
               </Typography>
               <Typography className="questionNumber">Question 10/15</Typography>
               <Typography variant="h5" className="questionHeading">
-                How Are Your Sleeping Patterns?{" "}
+                How Are Your Sleeping Patterns?
               </Typography>
               <Typography className="description" sx={{ mb: 2 }}>
                 There is nothing better than feeling rested! On the other hand,
                 constantly feeling exhausted is no fun and is an important sign
-                that something has to change in your routine.{" "}
+                that something has to change in your routine.
               </Typography>
               <Typography className="description">
-                Help us identify your sleeping habits!{" "}
+                Help us identify your sleeping habits!
               </Typography>
             </Card>
           </Box>
